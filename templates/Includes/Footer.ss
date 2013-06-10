@@ -1,6 +1,8 @@
-<footer class="footer">
+<footer>
 	<hr>
 	<div class="container">
-		<p>&copy; $Now.Year &mdash; $SiteConfig.Tagline.RAW</p>
+		<p class="muted pull-right">
+			&copy; $Now.Year &mdash; $SiteConfig.Tagline.RAW
+		</p>
 	</div>
 </footer>

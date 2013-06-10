@@ -1,13 +1,13 @@
 <div class="row"><% if Menu(2) %>
-	<div class="span3">
+	<aside class="span3">
 		<% include Sidebar %>
-	</div>
+	</aside>
 	<div class="span9"><% else %>
 	<div class="span12"><% end_if %>
-		<div id="content" role="main"><% if Title %>
+		<main id="content" role="main"><% if Title %>
 			<div class="page-header"><h1>$Title</h1></div><% end_if %>
 			$Content
-			$Form
-		</div>
+		</main>
+		$Form
 	</div>
 </div>

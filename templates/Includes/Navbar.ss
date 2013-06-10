@@ -1,4 +1,4 @@
-<div class="navbar navbar-fixed-top">
+<header class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
 			<a class="brand" href="/">$SiteConfig.Title</a><% if Menu(1) %>
@@ -7,4 +7,4 @@
 			</ul><% end_if %>
 		</div>
 	</div>
-</div>
+</header>
