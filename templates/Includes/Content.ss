@@ -1,6 +1,6 @@
-<div class="row"><% if Menu(2) %>
+<div class="row"><% if TOC %>
 	<aside class="span3">
-		<% include Sidebar %>
+		<% include TOC %>
 	</aside>
 	<div class="span9"><% else %>
 	<div class="span12"><% end_if %>
