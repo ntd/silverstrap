@@ -12,6 +12,7 @@
 <% include Incipit %>
 <% include Navbar %>
 $Layout
+<% include Sitemap %>
 <% include Footer %>
 <% include Explicit %>
 </body>
