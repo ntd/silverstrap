@@ -8,7 +8,7 @@
 <% include Head %>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".toc">
 <% include Incipit %>
 <% include Navbar %>
 $Layout
