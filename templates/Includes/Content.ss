@@ -1,6 +1,9 @@
-<div class="row"><% if TOC %>
+<div class="row"><% if $Autotoc %>
 	<aside class="span3">
-		<% include TOC %>
+		<ul class="nav nav-list affix">
+			<li class="nav-header"><%t Silverstrap.TOC %></li>
+			<% include Autotoc %>
+		</ul>
 	</aside>
 	<div class="span9"><% else %>
 	<div class="span12"><% end_if %>

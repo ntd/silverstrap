@@ -1,3 +1,4 @@
 it:
   Silverstrap:
     GOTO: 'Vai alla pagina {page}'
+    TOC: 'Indice'
