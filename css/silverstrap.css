@@ -1,6 +1,10 @@
 body {
 	padding-top: 40px;
 }
+a.anchor {
+	position: relative;
+	top: -40px;
+}
 .nav {
 	margin-top: 20px;
 	padding-left: 15px;
