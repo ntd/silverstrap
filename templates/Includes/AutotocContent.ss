@@ -1,7 +1,8 @@
 	<aside class="span3">
 		<ul class="nav nav-list affix">
 			<li class="nav-header"><%t Silverstrap.TOC %></li>
-			<% include Autotoc %>
+			<%-- Include only the first level of the TOC --%><% loop $Autotoc.Children %>
+			<li><a href="#$Id.ATT">$Title</a></li><% end_loop %>
 		</ul>
 	</aside>
 	<div class="span9">
