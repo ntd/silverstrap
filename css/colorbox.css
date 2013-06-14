@@ -32,4 +32,15 @@
 #cboxClose { right: 5px; }
 #cboxLoadingGraphic { background: url(/framework/admin/images/spinner.gif) no-repeat center center }
 
-
+/* Just to avoid some markup and retain backward compatibility... */
+.zoom {
+	float: right;
+	clear: right;
+	margin: 2ex 0 2ex 1em;
+}
+.zoom img {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	padding: 4px;
+}
