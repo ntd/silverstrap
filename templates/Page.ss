@@ -18,8 +18,10 @@
 	$Layout
 	<% include Sitemap %>
 	<% include Footer %>
+	<%-- List of components loaded by this web-site --%>
 	<% include JQuery %>
 	<% include Bootstrap %>
+	<% include Colorbox %>
 	<% require themedCSS(silverstrap) %>
 </body>
 
