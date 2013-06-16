@@ -5,10 +5,12 @@ a.anchor {
 	position: relative;
 	top: -40px;
 }
+/* Match margin-bottom to margin-top */
 #content {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+/* Nested sublevel grouping, not used in these templates */
 .nav {
 	margin-top: 20px;
 	padding-left: 15px;
@@ -16,127 +18,11 @@ a.anchor {
 }
 .nav .nav {
 	margin-top: 0;
-	margin-bottom: 8px;
-}
-form {
-	margin-top: 3ex;
-}
-form label.left {
-	float: left;
-	clear: left;
-	width: 20%;
-}
-form .middleColumn {
-	float: left;
-	padding-right: 1em;
-}
-form div.checkbox {
-	clear: left;
-	margin-left: 20%;
-}
-form #Privacy {
-	clear: left;
-	margin-left: 20%;
-	height: 16ex;
-	overflow: auto;
-	border: 1px solid #dad9d9;
-	padding: 4px;
-}
-form #Privacy h4 {
-	margin-top: 0;
-}
-form #Accept {
-	clear: left;
-	margin: 1ex 0 2ex 20%;
-}
-form div.Actions {
-	clear: left;
-	margin-left: 20%;
-}
-span.message {
-	float: left;
-	padding-bottom: 2ex;
-	color: #F00;
-}
-p.message {
-	padding: 8px;
-	color: #080;
-	background-color: #8F8;
-	border: 1px solid #080;
-}
-p.bad {
-	color: #F00;
-	background-color: #F88;
-	border: 1px solid #F00;
-}
-span.message,
-p.message {
-	font-style: italic;
-	font-weight: bolder;
+	margin-bottom: 4px;
 }
 
-/* Image handling, borrowed from Simple */
-img {
-	border: none;
-	height: auto;
-}
-img.left {
-	float: left;
-	max-width: 50%;
-	margin: 5px 20px 10px 0;
-}
-img.right {
-	float: right;
-	max-width: 50%;
-	margin: 5px 0 10px 20px;
-}
-img.leftAlone {
-	float: left;
-	margin-right: 100%;
-	margin-bottom: 10px;
-	clear: both;
-}
-img.center {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	margin-bottom: 10px;
-	clear: both;
-}
-.captionImage {
-	width: 100%;
-	margin: 5px 0px 20px 0px;
-}
-.captionImage.left {
-	float: left;
-	margin-right: 20px;
-}
-.captionImage.leftAlone{
-	float: none;
-	margin-right: 20px;
-}
-.captionImage.right{
-	float: right;
-	margin-left: 20px;
-}
-.captionImage.center{
-	margin-left: auto;
-	margin-right: auto;
-}
-.captionImage p {
-	clear: both;
-	margin: 5px 0;
-	font-style: italic;
-	color: #888;
-}
-.captionImage.right p {
-	margin-left: -10px;
-	text-align: left;
-	margin-left: -10px;
-}
-
-/* Zoomable images */
+/* Zoomable images, especially added to be backward compatible with the
+ * silverstripe-treeish theme */
 .zoom {
 	float: right;
 	clear: right;
