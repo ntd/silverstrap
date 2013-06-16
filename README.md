@@ -67,3 +67,9 @@ to use a different CSS file:
     <% require CSS(themes/silverstrap_Page/css/mybootstrap.css) %>
     <% require themedCSS(bootstrap-responsive) %>
     <script src="$ThemeDir/js/bootstrap.min.js"></script>
+
+Support
+-------
+
+For bug reports or feature requests, go to the dedicated [development
+tracker](http://dev.entidi.com/p/silverstrap/).
