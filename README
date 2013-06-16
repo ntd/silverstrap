@@ -1,6 +1,8 @@
 The default implementation provides support for custom nested levels
-but does not give access to the parent nodes. To have this access
-enabled you can add a fixed element as the first item to every submenu:
+in .navlist but does not provide a way to access the parent nodes (as
+usually done in vanilla SilverStripe). To achieve this you must override
+NavbarItem.ss and add a fixed item at the beginning of the <ul>, right
+before looping on $Children:
 
 <li class="$LinkingMode">
     <a href="$Link.ATT" title="<%t Silverstrap.GOTO page=$Title.ATT %>">$Title</a>
