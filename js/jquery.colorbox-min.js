@@ -12,6 +12,7 @@ $(document).ready(function() {
     $('a.zoom').colorbox({
 	opacity: 0.3,
 	rel: 'zoom',
+	photo: true, // Do not rely on the URL for detecting an image
 	maxWidth: '95%',
 	maxHeight: '95%',
 	current: '{current} / {total}',
