@@ -3,7 +3,7 @@
 		<div class="container">
 			<a class="brand" href="/">$SiteConfig.Title</a><% if $Menu(1) %>
 			<ul class="nav"><% loop $Menu(1) %>
-				<% include NavbarItem Mode="dropdown" %><% end_loop %>
+				<% include NavbarItem %><% end_loop %>
 			</ul><% end_if %>
 		</div>
 	</div>

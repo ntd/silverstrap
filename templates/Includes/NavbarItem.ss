@@ -1,15 +1,6 @@
-<% if $Children %>
-	<li class="$Mode">
-		<a href="$Link.ATT" class="dropdown-toggle" data-toggle="dropdown">
-			$Title<% if $Mode=="dropdown" %>
-			<b class="caret"></b><% end_if %>
-		</a>
-		<ul class="dropdown-menu"><% loop $Children %>
-			<% include NavbarItem Mode="dropdown-submenu" %><% end_loop %>
-		</ul>
-	</li>
+<% if $Children %><% if $Parent %>
+    <% include NavbarSubmenu %><% else %>
+    <% include NavbarMenu %><% end_if %>
 <% else %>
-	<li class="$LinkingMode">
-		<a href="$Link.ATT" title="<%t Silverstrap.GOTO page=$Title.ATT %>">$Title</a>
-	</li>
+    <% include NavbarLink %>
 <% end_if %>
