@@ -53,6 +53,14 @@ silverstrap folder:
     <% require themedCSS(bootstrap-responsive) %>
     <script src="$ThemeDir/js/bootstrap.min.js"></script>
 
+
+[silverstripe-cerulean](http://dev.entidi.com/p/silverstripe-cerulean/)
+is an extension to Silverstrap that uses this very same approach to
+override the Bootstrap theme Silverstrap is based on with
+[Cerulean](http://bootswatch.com/cerulean/). You can check the
+[source code](http://dev.entidi.com/p/silverstripe-cerulean/source/tree/master/)
+for technical details.
+
 This trick can be used to override anything, such as to enhance the
 default page template, to set the favicon, to add or remove a feature
 or to put a watermark on every page. The templates in silverstrap are
