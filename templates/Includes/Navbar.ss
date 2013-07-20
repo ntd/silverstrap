@@ -5,6 +5,7 @@
 			<ul class="nav"><% loop $Menu(1) %>
 				<% include NavbarItem %><% end_loop %>
 			</ul><% end_if %><% end_cached %>
+			$SearchForm
 		</div>
 	</div>
 </header>

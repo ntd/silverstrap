@@ -34,3 +34,9 @@ a.anchor {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 	padding: 4px;
 }
+.results ul {
+	list-style: none;
+}
+.results li {
+	padding: 4px 0;
+}

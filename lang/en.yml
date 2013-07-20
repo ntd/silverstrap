@@ -2,3 +2,6 @@ en:
   Silverstrap:
     GOTO: 'Go to {page} page'
     TOC: 'Table of contents'
+    Search: 'Search'
+    RESULTS: 'Showing results for &quot;{query}&quot; ({count} pages found):'
+    NORESULTS: 'No results containing &quot;{query}&quot; were found.'

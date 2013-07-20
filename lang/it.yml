@@ -2,3 +2,6 @@ it:
   Silverstrap:
     GOTO: 'Vai alla pagina {page}'
     TOC: 'Indice'
+    Search: 'Cerca'
+    RESULTS: 'Visualizzazione dei risultati per &quot;{query}&quot; ({count} pagine trovate):'
+    NORESULTS: 'Nessuna voce contenente &quot;{query}&quot; è stata trovata.'
