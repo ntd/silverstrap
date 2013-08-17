@@ -1,7 +1,8 @@
-<% include CGOpening %><% if $Title %>
+<div class="control-group $extraClass<% if $Message %> error<% end_if %>"><% if $Title %>
 	<label class="control-label" for="$ID">$Title</label><% end_if %>
 	<div class="controls"><% loop $FieldList %>
-		$SmallFieldHolder<% end_loop %>
+		$SmallFieldHolder<% end_loop %><% if $Message %>
+        <span class="help-block">$Message</span><% end_if %>
 	</div><% if $RightTitle %>
 	<label class="control-label" for="$ID">$RightTitle</label><% end_if %>
-<% include CGClosing %>
+</div>

@@ -1,9 +1,9 @@
-<%-- Override extraClass otherwise .checkbox would increase padding-left --%>
-<% include CGOpening extraClass="" %>
+<div class="control-group<% if $Message %> error<% end_if %>">
 	<div class="controls">
 		<label class="checkbox">
 			$Field
 			$Title
-		</label>
+		</label><% if $Message %>
+		<span class="help-block">$Message</span><% end_if %>
 	</div>
-<% include CGClosing %>
+</div>
