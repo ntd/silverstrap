@@ -1,1 +1,1 @@
-<link rel="shortcut icon" href="$ThemeDir/img/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
