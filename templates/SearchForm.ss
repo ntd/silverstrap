@@ -1,6 +1,6 @@
-<form class="navbar-search form-search pull-right" $FormAttributes>
+<form class="navbar-form form-search pull-right" $FormAttributes>
 	<div class="input-append">
-		<input name="Search" type="text" class="search-query" value="$SearchQuery">
-		<button type="submit" class="btn"><%t Silverstrap.Search %></button>
+		<input name="Search" type="text" class="search-query input-medium" value="$SearchQuery">
+		<button type="submit" class="btn btn-primary"><%t Silverstrap.Search %></button>
 	</div>
 </form>
