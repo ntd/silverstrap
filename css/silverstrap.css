@@ -24,15 +24,32 @@ a.anchor {
 /* Zoomable images, especially added to be backward compatible with the
  * silverstripe-treeish theme */
 .zoom {
+	/* By default (without explicit pull) floats on the right */
 	float: right;
 	clear: right;
-	margin: 2ex 0 2ex 1em;
+	margin-left: 15px;
+}
+.pull-left .zoom {
+	clear: left;
+	margin-left: 0;
+	margin-right: 15px;
 }
 .zoom img {
-	background-color: #FFFFFF;
+	background-color: #eee;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-	padding: 4px;
+	padding: 8px;
+	margin: 6px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 6px 2px #ccc;
+	-webkit-box-shadow: 0 0 6px 2px #ccc;
+	box-shadow: 0 0 6px 2px #ccc;
+}
+.zoom img:hover {
+	background-color: #fff;
+	-moz-box-shadow: 0 0 6px 2px #eee;
+	-webkit-box-shadow: 0 0 6px 2px #eee;
+	box-shadow: 0 0 6px 2px #eee;
 }
 .results ul {
 	list-style: none;
