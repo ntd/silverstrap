@@ -61,11 +61,9 @@ a.anchor {
 /* Provide a way to put inside scrollable boxes chunks of arbitrary
  * HTML code (as required by e.g. privacy policies) */
 .boxed {
-	margin-left: 0;
-	height: 20ex;
+	height: 30ex;
 	overflow: auto;
 	padding: 4px 6px;
-	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: 20px;
 	color: #555;
@@ -73,8 +71,8 @@ a.anchor {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	background-color: #FFFFFF;
-	border: 1px solid #CCCCCC;
+	background-color: #fff;
+	border: 1px solid #ccc;
 }
 .boxed > * {
 	margin-top: 0;
