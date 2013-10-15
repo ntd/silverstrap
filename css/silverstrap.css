@@ -5,6 +5,16 @@ a.anchor {
 	position: relative;
 	top: -40px;
 }
+/* Provide a way to add some vertical space */
+.smallskip {
+	margin-top: 10px;
+}
+.skip {
+	margin-top: 20px;
+}
+.bigskip {
+	margin-top: 30px;
+}
 /* Match margin-bottom to margin-top */
 #content {
 	margin-top: 20px;
