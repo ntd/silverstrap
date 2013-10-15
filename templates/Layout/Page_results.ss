@@ -1,7 +1,7 @@
 <div class="container results">
 	<div class="row">
 		<div class="span12">
-			<h1>$Title</h1>
+			<div class="page-header"><h1>$Title</h1></div>
 <% if $Results %>
 			<p><%t Silverstrap.RESULTS query=$Query count=$Results.Count %></p>
 			<ul><% loop $Results %>
