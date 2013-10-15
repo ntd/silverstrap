@@ -4,7 +4,7 @@
 		<button type="button" class="close" data-dismiss="alert">&times;</button>
 		$Message
 	</div><% else %>
-	<div id="{$FormName}_error" class="alert $MessageType" style="display: none"></div><% end_if %>
+	<div id="{$FormName}_error" class="alert hide $MessageType"></div><% end_if %>
 
 	<fieldset><% if $Legend %>
 		<legend>$Legend</legend><% end_if %><% loop $Fields %>
