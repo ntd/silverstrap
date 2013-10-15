@@ -5,8 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<% base_tag %>
-	$MetaTags(false)
-	<title>$Title</title>
+	<% if $MetaDescription %><meta name="description" content="$MetaDescription.ATT"><% end_if %>
+	<% if $MetaKeywords %><meta name="keywords" content="$MetaKeywords.ATT"><% end_if %>
+	$ExtraMeta<title>$Title</title>
 	<% include Favicon %>
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
