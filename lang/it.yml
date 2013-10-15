@@ -3,5 +3,6 @@ it:
     GOTO: 'Vai alla pagina {page}'
     TOC: 'Indice'
     Search: 'Cerca'
+    SearchTitle: 'Inserire i termini da ricercare'
     RESULTS: 'Visualizzazione dei risultati per &quot;{query}&quot; ({count} pagine trovate):'
     NORESULTS: 'Nessuna voce contenente &quot;{query}&quot; è stata trovata.'

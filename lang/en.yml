@@ -3,5 +3,6 @@ en:
     GOTO: 'Go to {page} page'
     TOC: 'Table of contents'
     Search: 'Search'
+    SearchTitle: 'Enter the terms to search'
     RESULTS: 'Showing results for &quot;{query}&quot; ({count} pages found):'
     NORESULTS: 'No results containing &quot;{query}&quot; were found.'
