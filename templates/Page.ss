@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<% base_tag %>
+	$MetaTags(false)
 	<title>$Title</title>
 	<% include Favicon %>
 	<!--[if lt IE 9]>
