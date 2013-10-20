@@ -1,3 +1,4 @@
+<% cached 'sitemap', List(Page).max(LastEdited) %>
 <div class="well well-large">
 	<div class="container">
 		<div class="row">
@@ -13,3 +14,4 @@
 		</div>
 	</div>
 </div>
+<% end_cached %>

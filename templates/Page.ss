@@ -10,11 +10,9 @@
 
 <%-- The template is silverstripe-autotoc ready --%>
 <body$BodyAutotoc>
-<% cached 'Page', List(Page).max(LastEdited) %>
 <% include Navbar %>
-<% uncached %>$Layout<% end_uncached %>
+$Layout
 <% include Sitemap %>
-<% end_cached %>
 <% include Footer %>
 <%-- List of components loaded by this website --%>
 <% include JQuery %>
