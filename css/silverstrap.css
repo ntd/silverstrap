@@ -92,3 +92,15 @@ a.zoom img {
 .help-block {
 	font-weight: bold;
 }
+
+/* Support for title buttons, required by silverstripe-project */
+.title-buttons {
+}
+.title-buttons .btn {
+	-webkit-border-radius: 21px;
+	-moz-border-radius: 21px;
+	border-radius: 21px;
+}
+.title-buttons .btn + .btn {
+	margin-left: 8px !important;
+}
