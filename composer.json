@@ -18,7 +18,7 @@
     ],
     "support": {
         "issues": "http://dev.entidi.com/p/silverstrap/issues/",
-        "issues": "http://dev.entidi.com/p/silverstrap/source/tree/master/
+        "source": "http://dev.entidi.com/p/silverstrap/source/tree/master/"
     },
     "suggest": {
         "entidi/silverstrap-cerulean": "Silverstrap customization that uses the Cerulean theme from bootswatch.com"
