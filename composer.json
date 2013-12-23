@@ -3,7 +3,6 @@
     "description": "A silverstripe theme based on Bootstrap front-end framework",
     "type": "silverstripe-theme",
     "keywords": ["silverstripe", "bootstrap", "silverstrap"],
-    "minimum-stability": "stable",
     "require": {
         "silverstripe/framework": "3.*"
     },
