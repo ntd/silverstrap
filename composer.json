@@ -20,6 +20,7 @@
         "source": "http://dev.entidi.com/p/silverstrap/source/tree/master/"
     },
     "suggest": {
-        "entidi/silverstrap-cerulean": "Silverstrap customization that uses the Cerulean theme from bootswatch.com"
+        "entidi/silverstrap-cerulean": "Silverstrap customization that uses the Cerulean theme from bootswatch.com",
+        "entidi/silverstripe-autotoc": "A module compatible with silverstrap that automatically generates table of contents"
     }
 }
