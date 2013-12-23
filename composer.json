@@ -1,0 +1,26 @@
+{
+    "name": "entidi/silverstrap",
+    "description": "A silverstripe theme based on Bootstrap front-end framework",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "bootstrap", "silverstrap"],
+    "minimum-stability": "stable",
+    "require": {
+        "silverstripe/framework": "3.*"
+    },
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Nicola Fontana",
+            "email": "ntd@entidi.it",
+            "homepage": "http://www.entidi.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "http://dev.entidi.com/p/silverstrap/issues/",
+        "issues": "http://dev.entidi.com/p/silverstrap/source/tree/master/
+    },
+    "suggest": {
+        "entidi/silverstrap-cerulean": "Silverstrap customization that uses the Cerulean theme from bootswatch.com"
+    }
+}
