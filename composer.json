@@ -6,7 +6,7 @@
     "require": {
         "silverstripe/framework": "3.*"
     },
-    "license": "BSD",
+    "license": "BSD-2-Clause",
     "authors": [
         {
             "name": "Nicola Fontana",
