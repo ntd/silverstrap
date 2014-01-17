@@ -1,4 +1,4 @@
-<% cached 'sitemap', List(Page).max(LastEdited) %>
+<% cached 'navbar', $List(Page).max(LastEdited), $List(Page).count() %>
 <div class="well well-large">
 	<div class="container">
 		<div class="row">
