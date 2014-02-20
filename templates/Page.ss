@@ -9,7 +9,7 @@
 </head>
 
 <%-- The template is silverstripe-autotoc ready --%>
-<body$BodyAutotoc>
+<body>
 <% include Navbar %>
 $Layout
 <% include Sitemap %>

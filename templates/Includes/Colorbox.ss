@@ -1,2 +1,2 @@
 <% require themedCSS(colorbox) %>
-<script src="$ThemeDir/js/jquery.colorbox-min.js"></script>
+<% require javascript(themes/silverstrap/js/jquery.colorbox-min.js) %>
