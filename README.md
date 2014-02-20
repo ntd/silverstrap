@@ -10,7 +10,8 @@ check how your new site look.
 
 The master-1.0 branch is in maintenance mode and it is based on the
 deprecated (and no longer officially supported) Bootstrap version 2.
-The master and dev branches are based on Bootstrap 3.
+The master and dev branches, released as silverstrap-2.x.x, are based
+on Bootstrap 3.
 
 Features
 --------
