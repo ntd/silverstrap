@@ -8,6 +8,10 @@ your `themes` folder, enable it (either programmatically by using
 `SSViewer::set_theme('silverstrap')` or by switching it in the CMS) and
 check how your new site look.
 
+The master-1.0 branch is in maintenance mode and it is based on the
+deprecated (and no longer officially supported) Bootstrap version 2.
+The master and dev branches are based on Bootstrap 3.
+
 Features
 --------
 
