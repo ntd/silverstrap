@@ -1,3 +1,3 @@
 <% require themedCSS(bootstrap) %>
-<% require themedCSS(bootstrap-responsive) %>
-<script src="$ThemeDir/js/bootstrap.min.js"></script>
+<% require themedCSS(bootstrap-theme) %>
+<% require javascript(themes/silverstrap/js/bootstrap.min.js) %>

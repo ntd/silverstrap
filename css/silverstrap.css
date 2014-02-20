@@ -1,10 +1,16 @@
-body {
-	padding-top: 40px;
+/* AutoTOC styling */
+#ss-toc.affix-top {
+	position: absolute;
 }
-a.anchor {
-	position: relative;
-	top: -40px;
+#ss-toc.affix {
+	top: 0px;
 }
+#ss-toc-header {
+	font-variant: small-caps;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
 /* Provide a way to add some vertical space */
 .smallskip {
 	margin-top: 10px;
@@ -14,21 +20,6 @@ a.anchor {
 }
 .bigskip {
 	margin-top: 30px;
-}
-/* Match margin-bottom to margin-top */
-#content {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-/* Nested sublevel grouping, not used in these templates */
-.nav {
-	margin-top: 20px;
-	padding-left: 15px;
-	margin-right: -15px;
-}
-.nav .nav {
-	margin-top: 0;
-	margin-bottom: 4px;
 }
 
 /* Zoomable images, especially added to be backward compatible with the
