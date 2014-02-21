@@ -1,3 +1,3 @@
 <footer class="container">
-	<p>&copy; $Now.Year &mdash; $SiteConfig.Tagline.RAW</p>
+	<p>Copyright &copy; $Now.Year &mdash; $SiteConfig.Tagline.RAW</p>
 </footer>
