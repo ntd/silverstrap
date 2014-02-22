@@ -53,10 +53,11 @@ a.zoom img {
 	-webkit-box-shadow: 0 0 6px 2px #ccc;
 	box-shadow: 0 0 6px 2px #ccc;
 }
-.results ul {
+.ss-results ul {
 	list-style: none;
+	padding-left: 0;
 }
-.results li {
+.ss-results li {
 	padding: 4px 0;
 }
 
