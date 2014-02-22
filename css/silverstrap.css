@@ -85,13 +85,13 @@ a.zoom img {
 }
 
 /* Support for title buttons, required by silverstripe-project */
-.title-buttons {
+.ss-buttons {
 }
-.title-buttons .btn {
+.ss-buttons .btn {
 	-webkit-border-radius: 21px;
 	-moz-border-radius: 21px;
 	border-radius: 21px;
 }
-.title-buttons .btn + .btn {
+.ss-buttons .btn + .btn {
 	margin-left: 8px !important;
 }
