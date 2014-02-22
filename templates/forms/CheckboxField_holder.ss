@@ -5,7 +5,7 @@
 				$Field
 				$Title
 			</label><% if $Message %>
-			<span class="help-block">$Message</span><% end_if %>
+			<p class="help-block">$Message</p><% end_if %>
 		</div>
 	</div>
 </div>

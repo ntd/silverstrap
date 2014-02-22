@@ -62,7 +62,7 @@ a.zoom img {
 
 /* Provide a way to put inside scrollable boxes chunks of arbitrary
  * HTML code (as required by e.g. privacy policies) */
-.boxed {
+.ss-boxed {
 	height: 30ex;
 	overflow: auto;
 	padding: 4px 6px;
@@ -76,12 +76,8 @@ a.zoom img {
 	background-color: #fff;
 	border: 1px solid #ccc;
 }
-.boxed > * {
+.ss-boxed > * {
 	margin-top: 0;
-}
-
-.help-block {
-	font-weight: bold;
 }
 
 /* Support for title buttons, required by silverstripe-project */

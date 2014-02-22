@@ -9,8 +9,7 @@
 	<fieldset><% if $Legend %>
 		<legend>$Legend</legend><% end_if %><% loop $Fields %>
 		$FieldHolder<% end_loop %>
-	</fieldset>
-	<div class="clearfix"></div><% if $Actions %>
+	</fieldset><% if $Actions %>
 	<div class="form-group">
 		<div class="col-sm-offset-3 col-sm-9"><% loop $Actions %>
 			$Field<% end_loop %>
