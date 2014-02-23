@@ -4,10 +4,4 @@
 		<%-- Include only the first level of the TOC --%><% loop $Autotoc.Children %>
 		<li><a href="#$Id.ATT" data-target="#$Id.ATT">$Title</a></li><% end_loop %>
 	</ul>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('body').scrollspy({ target: '#ss-toc' });
-			$('#ss-toc').affix({ offset: { top: 72 } });
-		});
-	</script>
 </aside>
