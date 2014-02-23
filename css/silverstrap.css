@@ -41,6 +41,8 @@ a.zoom img {
 	-webkit-box-shadow: 0 0 6px 2px #ccc;
 	box-shadow: 0 0 6px 2px #ccc;
 }
+
+/* Search results page */
 .ss-results ul {
 	list-style: none;
 	padding-left: 0;
@@ -50,7 +52,7 @@ a.zoom img {
 }
 
 /* Provide a way to put inside scrollable boxes chunks of arbitrary
- * HTML code (as required by e.g. privacy policies) */
+ * HTML code (as required by e.g. privacy policy) */
 .ss-boxed {
 	height: 30ex;
 	overflow: auto;
@@ -81,7 +83,7 @@ a.zoom img {
 	margin-left: 8px !important;
 }
 
-/* Enable support for two columns forms */
+/* Support for two columns forms, required by silverstripe-adg */
 .ss-2col {
 	position: relative;
 }
