@@ -71,18 +71,6 @@ a.zoom img {
 	margin-top: 0;
 }
 
-/* Support for title buttons, required by silverstripe-project */
-.ss-buttons {
-}
-.ss-buttons .btn {
-	-webkit-border-radius: 21px;
-	-moz-border-radius: 21px;
-	border-radius: 21px;
-}
-.ss-buttons .btn + .btn {
-	margin-left: 8px !important;
-}
-
 /* Support for two columns forms, required by silverstripe-adg */
 .ss-2col {
 	position: relative;
