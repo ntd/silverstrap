@@ -11,19 +11,7 @@
 	margin-bottom: 10px;
 }
 
-/* Provide a way to add some vertical space */
-.smallskip {
-	margin-top: 10px;
-}
-.skip {
-	margin-top: 20px;
-}
-.bigskip {
-	margin-top: 30px;
-}
-
-/* Zoomable images, especially added to be backward compatible with the
- * silverstripe-treeish theme */
+/* Zoomable images */
 .zoom {
 	/* By default (without explicit pull) floats on the right */
 	float: right;
@@ -53,16 +41,19 @@ a.zoom img {
 	-webkit-box-shadow: 0 0 6px 2px #ccc;
 	box-shadow: 0 0 6px 2px #ccc;
 }
-.results ul {
+
+/* Search results page */
+.ss-results ul {
 	list-style: none;
+	padding-left: 0;
 }
-.results li {
+.ss-results li {
 	padding: 4px 0;
 }
 
 /* Provide a way to put inside scrollable boxes chunks of arbitrary
- * HTML code (as required by e.g. privacy policies) */
-.boxed {
+ * HTML code (as required by e.g. privacy policy) */
+.ss-boxed {
 	height: 30ex;
 	overflow: auto;
 	padding: 4px 6px;
@@ -76,22 +67,79 @@ a.zoom img {
 	background-color: #fff;
 	border: 1px solid #ccc;
 }
-.boxed > * {
+.ss-boxed > * {
 	margin-top: 0;
 }
 
-.help-block {
-	font-weight: bold;
-}
-
 /* Support for title buttons, required by silverstripe-project */
-.title-buttons {
+.ss-buttons {
 }
-.title-buttons .btn {
+.ss-buttons .btn {
 	-webkit-border-radius: 21px;
 	-moz-border-radius: 21px;
 	border-radius: 21px;
 }
-.title-buttons .btn + .btn {
+.ss-buttons .btn + .btn {
 	margin-left: 8px !important;
+}
+
+/* Support for two columns forms, required by silverstripe-adg */
+.ss-2col {
+	position: relative;
+}
+.ss-2col .form-group {
+	width: 30%;
+	float: left;
+}
+.ss-2col .form-group label {
+	width: 60%;
+}
+.ss-2col br {
+	clear: left;
+}
+.ss-2col .col-sm-offset-3 {
+	margin-left: 60%;
+}
+
+/* Arbitrary nested menu support, required by silverstripe-gtkdoc */
+.dropdown-submenu {
+	position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -6px;
+	margin-left: -1px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px 6px;
+	border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu > a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #cccccc;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+	border-left-color: #ffffff;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+	display: block;
+}
+.dropdown-submenu.pull-left{
+	float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu{
+	left: -100%;
+	margin-left: 10px;
+	-webkit-border-radius: 6px 0 6px 6px;
+	-moz-border-radius: 6px 0 6px 6px;
+	border-radius: 6px 0 6px 6px;
 }

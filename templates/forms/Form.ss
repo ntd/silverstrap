@@ -1,5 +1,5 @@
 <% if $IncludeFormTag %>
-<form class="form-horizontal" $AttributesHTML role="form"><% end_if %><% if $Message %>
+<form class="form-horizontal $extraClass" $AttributesHTML role="form"><% end_if %><% if $Message %>
 	<div id="{$FormName}_error" class="alert $MessageType">
 		<button type="button" class="close" data-dismiss="alert">&times;</button>
 		$Message
@@ -9,8 +9,7 @@
 	<fieldset><% if $Legend %>
 		<legend>$Legend</legend><% end_if %><% loop $Fields %>
 		$FieldHolder<% end_loop %>
-	</fieldset>
-	<div class="clearfix"></div><% if $Actions %>
+	</fieldset><% if $Actions %>
 	<div class="form-group">
 		<div class="col-sm-offset-3 col-sm-9"><% loop $Actions %>
 			$Field<% end_loop %>
