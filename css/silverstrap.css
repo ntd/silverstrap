@@ -11,19 +11,7 @@
 	margin-bottom: 10px;
 }
 
-/* Provide a way to add some vertical space */
-.smallskip {
-	margin-top: 10px;
-}
-.skip {
-	margin-top: 20px;
-}
-.bigskip {
-	margin-top: 30px;
-}
-
-/* Zoomable images, especially added to be backward compatible with the
- * silverstripe-treeish theme */
+/* Zoomable images */
 .zoom {
 	/* By default (without explicit pull) floats on the right */
 	float: right;
@@ -91,4 +79,22 @@ a.zoom img {
 }
 .ss-buttons .btn + .btn {
 	margin-left: 8px !important;
+}
+
+/* Enable support for two columns forms */
+.ss-2col {
+	position: relative;
+}
+.ss-2col .form-group {
+	width: 30%;
+	float: left;
+}
+.ss-2col .form-group label {
+	width: 60%;
+}
+.ss-2col br {
+	clear: left;
+}
+.ss-2col .col-sm-offset-3 {
+	margin-left: 60%;
 }
