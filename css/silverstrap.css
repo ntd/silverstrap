@@ -1,15 +1,55 @@
+/* Navbar language selector */
+.navbar .ss-lang {
+	font-family: roman;
+	font-style: italic;
+	font-weight: lighter;
+	padding-left: 1em;
+}
+.navbar .ss-lang a {
+	text-shadow: none !important;
+}
+
+
 /* AutoTOC styling */
 #ss-toc.affix-top {
-	position: absolute;
+	position: static !important;
 }
 #ss-toc.affix {
-	top: 0px;
+	position: fixed !important;
+	top: 0px !important;
+	/* I have to specify it explicitely because when #ss-toc is at
+	 * fixed position, its width is no more referenced to the
+	 * parent container. */
+	width: 263px;
 }
-#ss-toc-header {
+#ss-toc strong {
 	font-variant: small-caps;
-	font-weight: bolder;
 	margin-bottom: 10px;
 }
+
+
+/* Carousel with caption, as required by silverstripe-carousel */
+#ss-carousel {
+	text-align: center;
+}
+#ss-carousel .carousel-caption {
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 12px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+}
+#ss-carousel .carousel-indicators {
+	position: static;
+	width: auto;
+	float: none;
+	margin-top: 12px;
+}
+#ss-carousel .carousel-indicators button {
+	width: auto;
+	height: auto;
+}
+
 
 /* Zoomable images */
 .zoom {
@@ -87,6 +127,34 @@ a.zoom img {
 }
 .ss-2col .col-sm-offset-3 {
 	margin-left: 60%;
+}
+
+
+/* Company data, usually used in the Sitemap.ss footer */
+.ss-company {
+	margin-left: 0 !important;
+	margin-bottom: 0 !important;
+}
+.ss-company img {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 2px 8px 0 0;
+}
+.ss-company strong {
+	font-size: 17.5px;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.9);
+}
+.ss-company small {
+	vertical-align: top;
+}
+.ss-company i {
+	font-style: normal;
+	display: block;
+	margin: 4px 4px 0 20px;
+	float: left;
+	clear: left;
+	min-width: 18px;
 }
 
 /* Arbitrary nested menu support, required by silverstripe-gtkdoc */
