@@ -1,1 +1,1 @@
-<% require javascript(https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js) %>
+<% require javascript(http://cdn.jsdelivr.net/jquery/1.11.0/jquery.min.js) %>
