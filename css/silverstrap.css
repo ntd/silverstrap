@@ -2,8 +2,10 @@
 .navbar .ss-lang {
 	font-family: roman;
 	font-style: italic;
-	font-weight: lighter;
 	padding-left: 1em;
+}
+.navbar .ss-lang + .ss-lang {
+	padding-left: 0;
 }
 .navbar .ss-lang a {
 	text-shadow: none !important;
