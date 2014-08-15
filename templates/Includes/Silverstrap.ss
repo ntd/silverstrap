@@ -2,5 +2,5 @@
 <% include JQuery %>
 <% include Bootstrap %>
 <% require themedCSS(silverstrap) %>
-<% require javascript(http://cdn.jsdelivr.net/colorbox/1.4.37/jquery.colorbox-min.js) %>
+<% require javascript(//oss.maxcdn.com/colorbox/1.5.9/jquery.colorbox-min.js) %>
 <% require javascript(themes/silverstrap/js/silverstrap.js) %>

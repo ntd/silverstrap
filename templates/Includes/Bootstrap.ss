@@ -1,3 +1,3 @@
-<% require CSS(http://cdn.jsdelivr.net/bootstrap/3.1.1/css/bootstrap.min.css) %>
-<% require CSS(http://cdn.jsdelivr.net/bootstrap/3.1.1/css/bootstrap-theme.min.css) %>
-<% require javascript(http://cdn.jsdelivr.net/bootstrap/3.1.1/js/bootstrap.min.js) %>
+<% require CSS(//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css) %>
+<% require CSS(//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css) %>
+<% require javascript(//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js) %>
