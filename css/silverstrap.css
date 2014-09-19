@@ -30,29 +30,6 @@
 }
 
 
-/* Carousel with caption, as required by silverstripe-carousel */
-#ss-carousel {
-	text-align: center;
-}
-#ss-carousel .carousel-caption {
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	padding: 12px;
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
-}
-#ss-carousel .carousel-indicators {
-	position: static;
-	width: auto;
-	float: none;
-	margin-top: 12px;
-}
-#ss-carousel .carousel-indicators button {
-	width: auto;
-	height: auto;
-}
-
-
 /* Zoomable images */
 .zoom {
 	/* By default (without explicit pull) floats on the right */
