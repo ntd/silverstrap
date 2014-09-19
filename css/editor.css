@@ -1,3 +1,158 @@
-@import 'bootstrap.min.css';
-@import 'bootstrap-theme.min.css';
-@import 'silverstrap.css';
+/*
+ * Directly adapted from a plain bootstrap.css file
+ * generated from http://getbootstrap.com/customize/
+ *
+ * Only a subset of the original classes has been ported.
+ */
+.typography {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333333;
+	background-color: #ffffff;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+.typography hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #eeeeee;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+.typography p {
+	margin: 0 0 10px;
+}
+.typography a {
+	background: transparent;
+	color: #428bca;
+	text-decoration: none;
+}
+.typography a:active, .typography a:hover {
+	outline: 0;
+	color: #2a6496;
+	text-decoration: underline;
+}
+.typography a:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+.typography b, .typography strong {
+	font-weight: bold;
+}
+.typography dfn {
+	font-style: italic;
+}
+.typography h1, .typography h2, .typography h3,
+.typography h4, .typography h5, .typography h6 {
+	font-weight: 500;
+	line-height: 1.1;
+}
+.typography h1, .typography h2, .typography h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.typography h4, .typography h5, .typography h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.typography h1 {
+	font-size: 36px;
+}
+.typography h2 {
+	font-size: 30px;
+}
+.typography h3 {
+	font-size: 24px;
+}
+.typography h4 {
+	font-size: 18px;
+}
+.typography h5 {
+	font-size: 14px;
+}
+.typography h6 {
+	font-size: 12px;
+}
+.typography small {
+	font-size: 85%;
+	font-weight: normal;
+	line-height: 1;
+	color: #777777;
+}
+.typography h1 small, .typography h2 small, .typography h3 small {
+	font-size: 65%;
+}
+.typography h4 small, .typography h5 small, .typography h6 small {
+	font-size: 75%;
+}
+.typography img {
+	border: 0;
+	vertical-align: middle;
+}
+.typography pre {
+	overflow: auto;
+}
+.typography code, .typography kbd, .typography pre, .typography samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+.typography table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.typography td, .typography th {
+	padding: 0;
+}
+.typography figure {
+	margin: 0;
+}
+.typography cite {
+	font-style: normal;
+}
+.typography mark {
+	background-color: #fcf8e3;
+	padding: .2em;
+}
+
+.typography ul, .typography ol {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.typography ul ul, .typography ol ul,
+.typography ul ol, .typography ol ol {
+	margin-bottom: 0;
+}
+.typography dl {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.typography dt,
+.typography dd {
+	line-height: 1.42857143;
+}
+.typography dt {
+	font-weight: bold;
+}
+.typography dd {
+	margin-left: 0;
+}
+.typography blockquote {
+	padding: 10px 20px;
+	margin: 0 0 20px;
+	font-size: 17.5px;
+	border-left: 5px solid #eeeeee;
+}
+.typography blockquote p:last-child, .typography blockquote ul:last-child,
+.typography blockquote ol:last-child {
+	margin-bottom: 0;
+}
+.typography address {
+	margin-bottom: 20px;
+	font-style: normal;
+	line-height: 1.42857143;
+}
