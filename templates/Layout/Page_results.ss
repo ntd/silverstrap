@@ -3,7 +3,7 @@
 		<div class="col-md-12">
 			<div class="page-header"><h1>$Title</h1></div>
 <% if $Results %>
-			<p><%t Silverstrap.RESULTS query=$Query count=$Results.Count %></p>
+			<p><%t Silverstrap.RESULTS query=$Query count=$Results.getTotalItems %></p>
 			<ul><% loop $Results %>
 				<li>
 					<article>
