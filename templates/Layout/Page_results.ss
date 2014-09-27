@@ -1,9 +1,8 @@
 <div class="container ss-results">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="page-header"><h1>$Title</h1></div>
-<% if $Results %>
-			<p><%t Silverstrap.RESULTS query=$Query count=$Results.Count %></p>
+			<div class="page-header"><h1>$Title</h1></div><% if $Results %>
+			<p><%t Silverstrap.RESULTS query=$Query count=$Results.getTotalItems %></p>
 			<ul><% loop $Results %>
 				<li>
 					<article>
@@ -22,10 +21,8 @@
 					<li><a href="$Link" title="<%t Silverstrap.GOTO page=$PageNum %>">$PageNum</a></li><% end_if %><% end_loop %>
 					<li<% if not $Results.NotLastPage %> class="disabled"<% end_if %>><a href="$Results.NextLink">&raquo;</a></li>
 				</ul>
-			</div><% end_if %>
-<% else %>
-			<p><%t Silverstrap.NORESULTS query=$Query %></p>
-<% end_if %>
+			</div><% end_if %><% else %>
+			<p><%t Silverstrap.NORESULTS query=$Query %></p><% end_if %>
 		</div>
 	</div>
 </div>
