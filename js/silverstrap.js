@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    var $subject;
+
     // Add ColorBox support for zooming images, if required
     if ($.isFunction($.colorbox)) {
 	$('.zoom').colorbox({
@@ -9,21 +11,23 @@ $(document).ready(function() {
     }
 
     // Enable the Bootstrap carousel with default delay, if it exists
-    if ($('#ss-carousel').length) {
-	$('#ss-carousel').carousel({
+    $subject = $('#ss-carousel');
+    if ($subject.length) {
+	$subject.carousel({
 	    interval: 8000
 	});
     }
 
     // Customize the behavior of the table of contents, if it exists
-    if ($('#ss-toc').length) {
+    $subject = $('#ss-toc');
+    if ($subject.length) {
 	$('body').scrollspy({
 	    target: '#ss-toc'
 	});
-	$('#ss-toc').affix({
+	$subject.affix({
 	    offset: {
-		top: 72,	// Default value for plain silverstrap
-		bottom: 350	// Custom value: change if needed
+		top: $subject.attr('data-offset-top') || 72,
+		bottom: $subject.attr('data-offset-bottom') || 350
 	    }
 	});
     }
