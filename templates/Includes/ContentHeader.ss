@@ -1,6 +1,6 @@
 <%--
     You can pass a custom string to be rendered as subtitle, e.g.:
-    {% include ContentHeader subtitle=$MetaDescription %}
+    <% include ContentHeader subtitle=$MetaDescription %>
 --%>
 <% if $Title %>
 <div class="page-header">
