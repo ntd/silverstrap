@@ -11,24 +11,31 @@
 	text-shadow: none !important;
 }
 
-
 /* AutoTOC styling */
-#ss-toc.affix-top {
-	position: static !important;
+#ss-toc {
+	margin-bottom: 20px;
 }
 #ss-toc.affix {
-	position: fixed !important;
-	top: 0px !important;
-	/* I have to specify it explicitely because when #ss-toc is at
-	 * fixed position, its width is no more referenced to the
-	 * parent container. */
-	width: 263px;
+	position: static !important;
+}
+#ss-toc.affix-top {
+	position: static !important;
 }
 #ss-toc strong {
 	font-variant: small-caps;
 	margin-bottom: 10px;
 }
-
+/* The affix of #ss-toc is enabled only for md and lg media */
+@media (min-width: 992px) {
+	#ss-toc.affix {
+		position: fixed !important;
+		top: 0px !important;
+		/* I have to specify it explicitely because when #ss-toc is at
+		 * fixed position, its width is no more referenced to the
+		 * parent container. */
+		width: 263px;
+	}
+}
 
 /* Zoomable images */
 .zoom {
