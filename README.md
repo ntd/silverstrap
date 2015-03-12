@@ -23,7 +23,7 @@ Features
   If you install the [silverstripe-autotoc](http://dev.entidi.com/p/silverstripe-autotoc/)
   module, silverstrap will generate on the fly the table of contents of
   the current page (if possible) and it will present it in a _.navlist_
-  on the left side. Your site will gain table of contents for free.
+  on the right side. Your site will gain table of contents for free.
 * Proper support for pages nested at arbitrary levels.
 * Quite extensible and customizable. This can be done by *overriding*
   the default implementation instead of editing it: check the following
