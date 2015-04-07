@@ -1,1 +1,1 @@
-<% require javascript(//oss.maxcdn.com/jquery/1.11/jquery.min.js) %>
+<% require javascript("//cdn.jsdelivr.net/jquery/1/jquery.min.js") %>
