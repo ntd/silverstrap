@@ -1,2 +1,2 @@
-<% require CSS(//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css) %>
-<% require javascript(//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js) %>
+<% require CSS("//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.min.css") %>
+<% require javascript("//cdn.jsdelivr.net/bootstrap/3/js/bootstrap.min.js") %>

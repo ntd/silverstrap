@@ -23,7 +23,7 @@ Features
   If you install the [silverstripe-autotoc](http://dev.entidi.com/p/silverstripe-autotoc/)
   module, silverstrap will generate on the fly the table of contents of
   the current page (if possible) and it will present it in a _.navlist_
-  on the left side. Your site will gain table of contents for free.
+  on the right side. Your site will gain table of contents for free.
 * Proper support for pages nested at arbitrary levels.
 * Quite extensible and customizable. This can be done by *overriding*
   the default implementation instead of editing it: check the following
@@ -46,25 +46,24 @@ silverstrap folder:
 
 1. put silverstrap under `themes` (as usual).
 2. create a `silverstrap_Page` directory at the same directory level:
-   any page of type `Page` (hence the whole site) will look in this
-   directory before for every template;
-3. copy the custom bootstrap CSS in some place accessible by the web
+   any page of type `Page` (hence the whole site) will look for
+   templates in this directory first;
+3. copy the new bootstrap CSS in some place accessible by the web
    server, e.g. under `themes/silverstrap_Page/css/mybootstrap.css`;
 4. create `themes/silverstrap_Page/templates/Includes/Bootstrap.ss`
-   and put the following template code in it:
+   and put the following code in it:
 
-    <%-- Override the default bootstrap theme with the custom one --%>
+    <%-- Override the default bootstrap CSS with the custom one --%>
     <% require CSS(themes/silverstrap_Page/css/mybootstrap.css) %>
-    <% require themedCSS(bootstrap-responsive) %>
-    <script src="$ThemeDir/js/bootstrap.min.js"></script>
-
+    <%-- Re-include the default bootstrap javascript --%>
+    <% require javascript(//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js) %>
 
 [silverstripe-cerulean](http://dev.entidi.com/p/silverstripe-cerulean/)
 is an extension to Silverstrap that uses this very same approach to
-override the Bootstrap theme Silverstrap is based on with
-[Cerulean](http://bootswatch.com/cerulean/). You can check the
+override the default Bootstrap theme with
+[Cerulean](http://bootswatch.com/cerulean/). You see the
 [source code](http://dev.entidi.com/p/silverstripe-cerulean/source/tree/master/)
-for technical details.
+for technical insights.
 
 This trick can be used to override anything, such as to enhance the
 default page template, to set the favicon, to add or remove a feature
