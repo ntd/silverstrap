@@ -53,10 +53,10 @@ silverstrap folder:
 4. create `themes/silverstrap_Page/templates/Includes/Bootstrap.ss`
    and put the following code in it:
 
-    <%-- Override the default bootstrap CSS with the custom one --%>
-    <% require CSS(themes/silverstrap_Page/css/mybootstrap.css) %>
-    <%-- Re-include the default bootstrap javascript --%>
-    <% require javascript(//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js) %>
+       <%-- Override the default bootstrap CSS with the custom one --%>
+       <% require CSS(themes/silverstrap_Page/css/mybootstrap.css) %>
+       <%-- Re-include the default bootstrap javascript --%>
+       <% require javascript("//cdn.jsdelivr.net/bootstrap/3/js/bootstrap.min.js") %>
 
 [silverstripe-cerulean](http://dev.entidi.com/p/silverstripe-cerulean/)
 is an extension to Silverstrap that uses this very same approach to
