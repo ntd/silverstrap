@@ -11,6 +11,11 @@
 	text-shadow: none !important;
 }
 
+/* Block quotations overrides */
+blockquote {
+	font-size: 110%;
+}
+
 /* AutoTOC styling */
 #ss-toc {
 	margin-bottom: 20px;
