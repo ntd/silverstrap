@@ -1,8 +1,8 @@
 {
     "name": "entidi/silverstrap",
-    "description": "A silverstripe theme based on Bootstrap front-end framework",
+    "description": "A SilverStripe theme based on Bootstrap front end framework",
     "type": "silverstripe-theme",
-    "homepage": "http://silverstripe.entidi.com/",
+    "homepage": "http://silverstripe.entidi.com/themes/",
     "keywords": ["silverstripe", "bootstrap", "theme", "form", "forms", "silverstrap"],
     "license": "BSD-2-Clause",
     "authors": [
@@ -18,7 +18,7 @@
         "source": "http://dev.entidi.com/p/silverstrap/source/tree/master/"
     },
     "require": {
-        "silverstripe/framework": ">=3.1"
+        "silverstripe/framework": "~3.1"
     },
     "extra": {
         "screenshots": [
