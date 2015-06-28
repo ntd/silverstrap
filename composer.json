@@ -27,6 +27,8 @@
     },
     "suggest": {
         "entidi/silverstrap-cerulean": "Silverstrap customization that uses the Cerulean theme from bootswatch.com",
-        "entidi/silverstripe-autotoc": "A module compatible with silverstrap that automatically generates table of contents"
+        "entidi/silverstripe-autotoc": "A module compatible with silverstrap that automatically generates table of contents",
+        "entidi/silverstripe-carousel": "A carousel page type supported out of the box by silverstrap",
+        "entidi/silverstripe-gallery": "A gallery page type supported out of the box by silverstrap"
     }
 }
