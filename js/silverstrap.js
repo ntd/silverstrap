@@ -2,9 +2,9 @@ $(document).ready(function() {
 	var $subject;
 
 	// Enable colorbox support on Fotorama frames
-	if ($.isFunction($.colorbox) && $.isFunction($.fotorama)) {
+	if ($.isFunction($.colorbox) && $.isFunction($.Fotorama)) {
 		var transition;
-		$.on('fotorama:show', function () {
+		$(document).on('fotorama:show', function () {
 			transition = true;
 		})
 		.on('fotorama:showend', function () {
@@ -58,8 +58,9 @@ $(document).ready(function() {
 
 	// Enable the Fotorama gallery (silverstripe-gallery)
 	$subject = $('#ss-gallery');
-	if ($subject.length && $.isFunction($.fotorama)) {
+	if ($subject.length && $.isFunction($.Fotorama)) {
 		$subject.fotorama({
+
 			nav: 'thumbs',
 			click: ! $.isFunction($.colorbox),
 			allowfullscreen: 'native',
