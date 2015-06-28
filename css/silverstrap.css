@@ -11,6 +11,13 @@
 	text-shadow: none !important;
 }
 
+/* Responsive carousel slides */
+.carousel-inner img {
+	display: block;
+	max-width: 100%;
+	margin: auto;
+}
+
 /* Block quotations overrides */
 blockquote {
 	font-size: 110%;
