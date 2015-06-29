@@ -19,6 +19,8 @@ $(document).ready(function() {
 					$.colorbox({
 						href: extra.frame.full,
 						title: extra.frame.caption,
+						maxWidth: '98%',
+						maxHeight: '98%',
 						photo: true
 					});
 				});
@@ -30,6 +32,8 @@ $(document).ready(function() {
 	if ($subject.length && $.isFunction($.colorbox)) {
 		$subject.colorbox({
 			rel: 'group',
+			maxWidth: '98%',
+			maxHeight: '98%',
 			photo: true
 		});
 	}
