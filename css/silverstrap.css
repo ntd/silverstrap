@@ -49,6 +49,22 @@ blockquote {
 	}
 }
 
+/* Fotorama customizations */
+.fotorama__caption {
+	text-align: center;
+	margin-bottom: 4px;
+}
+.fotorama__caption__wrap {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	color: #fff;
+	font-size: 90%;
+	font-weight: normal;
+	text-shadow: 1px 1px 1px #000;
+}
+.fotorama__caption__wrap p:last-child {
+	margin-bottom: 0;
+}
+
 /* Zoomable images */
 .zoom {
 	/* By default (without explicit pull) floats on the right */
