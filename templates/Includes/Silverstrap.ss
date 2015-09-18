@@ -13,5 +13,5 @@
 <% include Bootstrap %>
 <% include Colorbox %>
 <% include Fotorama %>
-<% require themedCSS(silverstrap) %>
-<% require javascript(themes/silverstrap/js/silverstrap.js) %>
+<% require themedCSS("silverstrap") %>
+<% require javascript("themes/silverstrap/js/silverstrap.js") %>
