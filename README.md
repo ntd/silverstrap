@@ -25,9 +25,41 @@ Features
   the current page (if possible) and it will present it in a _.navlist_
   on the right side. Your site will gain table of contents for free.
 * Proper support for pages nested at arbitrary levels.
-* Quite extensible and customizable. This can be done by *overriding*
-  the default implementation instead of editing it: check the following
-  section for further details.
+* Quite extensible and customizable. This can be done by _overriding_
+  the default implementation instead of editing it: check the section
+  *Overriding silverstrap* for further details.
+* Different components inclusion methods. By default external components
+  (such as JQuery and Bootstrap) are fetched from the jsdelivr CDN
+  network but a couple of alternate methods are provided. See the
+  section *External dependencies* for details.
+
+External dependencies
+---------------------
+
+Silverstrap depends on some external project:
+
+* _Bootstrap_, the main dependency;
+* _JQuery_, needed by Bootstrap;
+* _Colorbox_, for zooming images;
+* _Fotorama_, for photo galleries.
+
+_Colorbox_ and _Fotorama_ are not strictly required but are useful when
+silverstrap is used in conjunction with other modules. In any case,
+all those components are included out of the box by the base templates.
+
+By default the resources are fetched from the jsdelivr CDN network (see
+the `SilverstrapJsdelivr.ss` template) but a couple of alternatives are
+included:
+
+* `SilverstrapOffline.ss` fetches the resources directly from the
+  filesystem, making the site usable when disconnected from internet;
+* `SilverstrapModular.ss` fetches the resources from jsdelivr too but it
+  is modular, e.g. every dependency has its own template.
+
+Depending on your requirements, you can prefer one of these methods
+instead of the default one. If this is the case, just override
+`Silverstrap.ss` to include the offline or the modular version. Consult
+the next session to know how to override templates.
 
 Overriding silverstrap
 ----------------------
@@ -35,9 +67,8 @@ Overriding silverstrap
 Let's say you want to use a custom Bootstrap CSS, such as the ones
 provided by [Bootswatch](http://bootswatch.com/). You can download and
 store it over the default CSS found in `silverstrap/css/bootstrap.css`.
-This works but it will overwrite the default CSS provided by
-silverstrap... and this is bad. You loose the possibility to update
-silverstrap with a `git pull`.
+This works but it will change the silverstrap directory tree... and this
+is bad. You loose the possibility to update silverstrap with a `git pull`.
 
 Instead, you can use the SilverStripe template trick used by
 [silverstripe-treeish](http://dev.entidi.com/p/silverstripe-treeish/)
