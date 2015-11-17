@@ -1,3 +1,8 @@
+/* Put additional vertical space after the content */
+.ss-section {
+	margin-bottom: 2ex;
+}
+
 /* Navbar language selector */
 .navbar .ss-lang {
 	font-family: roman;
@@ -21,6 +26,12 @@
 /* Block quotations overrides */
 blockquote {
 	font-size: 110%;
+}
+
+/* Pagination addendum */
+.pagination .ss-borderless {
+	border-top: 0;
+	border-bottom: 0;
 }
 
 /* AutoTOC styling */

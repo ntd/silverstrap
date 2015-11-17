@@ -1,3 +1,3 @@
-<div class="container">
+<div class="typography container">
 	$Content
 </div>

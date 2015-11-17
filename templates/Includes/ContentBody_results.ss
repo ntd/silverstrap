@@ -5,7 +5,7 @@
 			<li>
 				<article>
 					<h4>
-						<a href="$Link"><% if $MenuTitle %>$MenuTitle<% else %>$Title<% end_if %></a><% if $MetaDescription %>
+						<a href="$Link.ATT"><% if $MenuTitle %>$MenuTitle<% else %>$Title<% end_if %></a><% if $MetaDescription %>
 						<small>$MetaDescription</small><% end_if %>
 					</h4>
 					<p>$Content.NoHTML.LimitWordCountXML(50)</p>

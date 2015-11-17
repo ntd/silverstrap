@@ -1,17 +1,6 @@
 <%--
-    List of components always loaded by default in silverstrap. You
-    can improve performances by leveraging jsdelivr [1] and combine all
-    the includes (JQuery, Bootstrap and Colorbox) into two HTTP requests:
-    see the SilverstrapCombined.ss template.
-
-    By default they are not combined to allow the modular overriding of
-    single templates.
-
-    [1] https://github.com/jsdelivr/jsdelivr#load-multiple-files-with-single-http-request
+    Load the common components using one of the available methods.
+    see the documentation on top of every Silverstrap*.ss template
+    for details of advantages and drawbacks of each solution.
  --%>
-<% include JQuery %>
-<% include Bootstrap %>
-<% include Colorbox %>
-<% include Fotorama %>
-<% require themedCSS(silverstrap) %>
-<% require javascript(themes/silverstrap/js/silverstrap.js) %>
+<% include SilverstrapJsdelivr %>
