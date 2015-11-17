@@ -16,9 +16,11 @@ on Bootstrap 3.
 Features
 --------
 
-* Should work out of the box.
-* No dependency on SASS or Ruby. This is a plain SilverStripe theme:
-  just unpack the tarball under `themes/` and enable it.
+* Composer ready.
+* No dependency on SASS/LESS/whatever. This is a plain SilverStripe
+  theme: just unpack the tarball under `themes/` or install via
+  `composer` and enable it.
+* Out of the box support for silverstripe blog and comments module.
 * Out of the box support for dynamically generated tables of contents.
   If you install the [silverstripe-autotoc](http://dev.entidi.com/p/silverstripe-autotoc/)
   module, silverstrap will generate on the fly the table of contents of
