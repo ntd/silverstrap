@@ -13,6 +13,16 @@ deprecated (and no longer officially supported) Bootstrap version 2.
 The master and dev branches, released as silverstrap-2.x.x, are based
 on Bootstrap 3.
 
+Installation
+------------
+
+With composer:
+
+    composer require entidi/silverstrap
+
+Without composer, download [the tarball](https://github.com/ntd/silverstrap/releases)
+and unpack it under the `themes` directory.
+
 Features
 --------
 
