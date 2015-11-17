@@ -64,42 +64,43 @@ the next session to know how to override templates.
 Overriding silverstrap
 ----------------------
 
-Let's say you want to use a custom Bootstrap CSS, such as the ones
-provided by [Bootswatch](http://bootswatch.com/). You can download and
-store it over the default CSS found in `silverstrap/css/bootstrap.css`.
-This works but it will change the silverstrap directory tree... and this
-is bad. You loose the possibility to update silverstrap with a `git pull`.
+Let's say you want to work off-line so you need to not depend on a CDN,
+as required out of the box by silverstrap. You can just modify
+`silverstrap/templates/Includes/Silverstrap.js` and change the code to
+include `SilverstrapOffline` instead of `SilverstrapJsdelivr`. Although
+this works, it will change the silverstrap directory tree... and this
+is very bad: you'll loose the possibility to update silverstrap with a
+`git pull` or by leveraging `composer`.
 
-Instead, you can use the SilverStripe template trick used by
+Instead you can use the SilverStripe template trick used by the
 [silverstripe-treeish](http://dev.entidi.com/p/silverstripe-treeish/)
-to override the templates *without touching a byte* of the original
-silverstrap folder:
+project, i.e. override any template *without* touching a single byte of
+the original folder:
 
-1. put silverstrap under `themes` (as usual).
-2. create a `silverstrap_Page` directory at the same directory level:
-   any page of type `Page` (hence the whole site) will look for
-   templates in this directory first;
-3. copy the new bootstrap CSS in some place accessible by the web
-   server, e.g. under `themes/silverstrap_Page/css/mybootstrap.css`;
-4. create `themes/silverstrap_Page/templates/Includes/Bootstrap.ss`
-   and put the following code in it:
+1. install silverstrap under `themes` (as usual): `composer` will do
+   this for you;
+2. create a `silverstrap_Page` directory at the same level of the
+   `silverstrap` directory: any page of type `Page` (hence the whole
+   site) will look for templates in this directory first;
+3. copy any template you want to override from `silverstrap` to
+   `silverstrap_Page`, retaining its relative path;
+4. modify in any way you like whatever under `silverstrap_Page`;
+5. flush and test.
 
-       <%-- Override the default bootstrap CSS with the custom one --%>
-       <% require CSS(themes/silverstrap_Page/css/mybootstrap.css) %>
-       <%-- Re-include the default bootstrap javascript --%>
-       <% require javascript("//cdn.jsdelivr.net/bootstrap/3/js/bootstrap.min.js") %>
+In the case outlined by this section, you can copy `Silverstrap.ss` into
+`silverstrap_Page/templates/Includes/Silverstrap.ss` and change its
+content to:
 
-[silverstripe-cerulean](http://dev.entidi.com/p/silverstripe-cerulean/)
+       <% include SilverstrapOffline %>
+
+This trick can be used to override pretty much everything, such as to
+enhance the default page template, to set the favicon, to add or remove
+a feature or to put a watermark on every page. The templates in
+silverstrap are quite fragmented to make the overriding easier. For
+example, [silverstripe-cerulean](http://dev.entidi.com/p/silverstripe-cerulean/)
 is an extension to Silverstrap that uses this very same approach to
-override the default Bootstrap theme with
-[Cerulean](http://bootswatch.com/cerulean/). You see the
-[source code](http://dev.entidi.com/p/silverstripe-cerulean/source/tree/master/)
-for technical insights.
-
-This trick can be used to override anything, such as to enhance the
-default page template, to set the favicon, to add or remove a feature
-or to put a watermark on every page. The templates in silverstrap are
-quite fragmented to make it easier to change only a single aspect.
+override the default plain Bootstrap theme with the
+[Cerulean](http://bootswatch.com/cerulean/) one.
 
 Accessing parent pages
 ----------------------
