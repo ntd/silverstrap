@@ -2,7 +2,7 @@
 	<div class="pull-right col-md-3 hidden-print">
 		$SideBarView
 	</div><% end_if %>
-	<article<% if $SideBarView %> class="col-md-9<% end_if %>">
+	<article<% if $SideBarView %> class="col-md-9"<% end_if %>>
 		<div class="page-header">
 			<h1><% if $ArchiveYear %>
 				<%t Blog.Archive "Archive" %>:<% if $ArchiveDay %>
@@ -17,11 +17,10 @@
 		<div class="typography clearfix">
 			$Content
 		</div><% if $PaginatedList.Exists %><% loop $PaginatedList %>
-		<% include PostSummary %><% end_loop %><% else %>
-		<p><%t Blog.NoPosts "There are no posts" %></p>
-		<% end_if %>
+		<% include PostSummary %><% end_loop %>
+		<% with $PaginatedList %><% include Pagination %><% end_with %><% else %>
+		<p><%t Blog.NoPosts "There are no posts" %></p><% end_if %>
 	</article>
 </div>
 $Form
 $CommentsForm
-<% with $PaginatedList %><% include Pagination %><% end_with %>
