@@ -78,7 +78,7 @@ Overriding silverstrap
 
 Let's say you want to work off-line so you need to not depend on a CDN,
 as required out of the box by silverstrap. You can just modify
-`silverstrap/templates/Includes/Silverstrap.js` and change the code to
+`silverstrap/templates/Includes/Silverstrap.ss` and change the code to
 include `SilverstrapOffline` instead of `SilverstrapJsdelivr`. Although
 this works, it will change the silverstrap directory tree... and this
 is very bad: you'll loose the possibility to update silverstrap with a
