@@ -1,1 +1,1 @@
-<textarea class="form-control" $AttributesHTML>$Value</textarea>
+<textarea class="form-control $extraClass" $getAttributesHTML(class)>$Value</textarea>
