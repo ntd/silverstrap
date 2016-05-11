@@ -136,6 +136,10 @@ a.zoom img {
 	margin-top: 0;
 }
 
+/* Form overriding */
+form .tab-content {
+	padding: 15px 0;
+}
 /* Support for two columns forms, required by silverstripe-adg */
 .ss-2col {
 	position: relative;
