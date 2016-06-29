@@ -157,7 +157,9 @@ form .tab-content {
 .ss-2col .col-sm-offset-3 {
 	margin-left: 60%;
 }
-
+.form-horizontal .form-group .ss-without-label {
+  margin: 20px 0;
+}
 
 /* Company data, usually used in the Sitemap.ss footer */
 .ss-company {
