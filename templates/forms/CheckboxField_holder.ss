@@ -1,6 +1,6 @@
 <div class="form-group $HolderClasses<% if $Message %> has-error<% end_if %>">
   <div class="col-sm-offset-3 col-sm-6">
-    <div class="checkbox">
+    <div class="checkbox<% if $isReadonly || $isDisabled %> disabled<% end_if %>">
       <label>
         $Field
         $Title
