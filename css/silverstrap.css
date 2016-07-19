@@ -88,23 +88,22 @@ blockquote {
 	margin-left: 0;
 	margin-right: 15px;
 }
-.zoom img,
-a.zoom img:hover {
-	background-color: #fff;
-	-moz-box-shadow: 0 0 6px 2px #eee;
-	-webkit-box-shadow: 0 0 6px 2px #eee;
-	box-shadow: 0 0 6px 2px #eee;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+.zoom img {
+	background-color: #eee;
+	        box-shadow: 0 0 6px 2px #ccc;
+	   -moz-box-shadow: 0 0 6px 2px #ccc;
+	-webkit-box-shadow: 0 0 6px 2px #ccc;
 	padding: 8px;
 	margin: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
 }
-a.zoom img {
-	background-color: #eee;
-	-moz-box-shadow: 0 0 6px 2px #ccc;
-	-webkit-box-shadow: 0 0 6px 2px #ccc;
-	box-shadow: 0 0 6px 2px #ccc;
+.zoom img:hover {
+	background-color: #fff;
+	        box-shadow: 0 0 6px 2px #eee;
+	   -moz-box-shadow: 0 0 6px 2px #eee;
+	-webkit-box-shadow: 0 0 6px 2px #eee;
+	border-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Search results page */
@@ -136,6 +135,10 @@ a.zoom img {
 	margin-top: 0;
 }
 
+/* Form overriding */
+form .tab-content {
+	padding: 15px 0;
+}
 /* Support for two columns forms, required by silverstripe-adg */
 .ss-2col {
 	position: relative;
@@ -153,7 +156,12 @@ a.zoom img {
 .ss-2col .col-sm-offset-3 {
 	margin-left: 60%;
 }
-
+.form-group .ss-without-label {
+  margin: 20px 0;
+}
+form legend .btn {
+  margin: 6px;
+}
 
 /* Company data, usually used in the Sitemap.ss footer */
 .ss-company {
