@@ -1,76 +1,78 @@
-$(document).ready(function() {
-	var $subject;
+var silverstrap = {
+  carousel: {
+    interval: 8000
+  },
+  scrollspy: {
+    target: '#ss-toc'
+  },
+  affix: {
+    offset: {
+      top: $('#ss-toc').data('offset-top') || 72,
+      bottom: $('#ss-toc').data('offset-bottom') || 350
+    }
+  },
+  colorbox: {
+    rel: 'group',
+    maxWidth: '98%',
+    maxHeight: '98%',
+    photo: true
+  },
+  fotorama: {
+    nav: 'thumbs',
+    click: ! $.isFunction($.colorbox),
+    allowfullscreen: 'native',
+    width: '100%'
+  }
+};
 
-	// Enable colorbox support on Fotorama frames
-	if ($.isFunction($.colorbox) && $.isFunction($.Fotorama)) {
-		var transition;
-		$(document).on('fotorama:show', function () {
-			transition = true;
-		})
-		.on('fotorama:showend', function () {
-			transition = false;
-		})
-		.on('fotorama:load', function (ev, fotorama, extra) {
-			extra.frame['$stageFrame'].find('.fotorama__img').not('.fotorama__img--full')
-				.css('cursor', 'zoom-in')
-				.on('click', function () {
-					if (transition)
-						return;
-					$.colorbox({
-						href: extra.frame.full,
-						title: function () {
-							return extra.frame.summary || extra.frame.caption;
-						},
-						maxWidth: '98%',
-						maxHeight: '98%',
-						photo: true
-					});
-				});
-		});
-	}
+$(document).ready(function () {
+  var $subject;
 
-	// Add ColorBox support for zooming images (silverstrap)
-	$subject = $('.zoom');
-	if ($subject.length && $.isFunction($.colorbox)) {
-		$subject.colorbox({
-			rel: 'group',
-			maxWidth: '98%',
-			maxHeight: '98%',
-			photo: true
-		});
-	}
+  // Enable colorbox support on Fotorama frames
+  if ($.isFunction($.colorbox) && $.isFunction($.Fotorama)) {
+    var transition;
+    $(document).on('fotorama:show', function () {
+      transition = true;
+    })
+    .on('fotorama:showend', function () {
+      transition = false;
+    })
+    .on('fotorama:load', function (ev, fotorama, extra) {
+      extra.frame['$stageFrame'].find('.fotorama__img').not('.fotorama__img--full')
+        .css('cursor', 'zoom-in')
+        .on('click', function () {
+          if (! transition)
+            $.colorbox($.extend({
+              href: extra.frame.full,
+              title: function () {
+                return extra.frame.summary || extra.frame.caption;
+              }}, silverstrap.colorbox));
+        });
+    });
+  }
 
-	// Customize the behavior of the table of contents (silverstripe-autotoc)
-	$subject = $('#ss-toc');
-	if ($subject.length && $.isFunction($.affix)) {
-		$('body').scrollspy({
-			target: '#ss-toc'
-		});
-		$subject.affix({
-			offset: {
-				top: $subject.attr('data-offset-top') || 72,
-				bottom: $subject.attr('data-offset-bottom') || 350
-			}
-		});
-	}
+  // Add ColorBox support for zooming images (silverstrap)
+  $subject = $('.zoom');
+  if ($subject.length && $.isFunction($.colorbox)) {
+    $subject.colorbox(silverstrap.colorbox);
+  }
 
-	// Enable the Bootstrap carousel (silverstripe-carousel)
-	$subject = $('#ss-carousel');
-	if ($subject.length && $.isFunction($.carousel)) {
-		$subject.carousel({
-			interval: 8000
-		});
-	}
+  // Customize the behavior of the table of contents (silverstripe-autotoc)
+  $subject = $('#ss-toc');
+  if ($subject.length && $.isFunction($.affix)) {
+    $('body').scrollspy(silverstrap.scrollspy);
+    $subject.affix(silverstrap.affix);
+  }
 
-	// Enable the Fotorama gallery (silverstripe-gallery)
-	$subject = $('#ss-gallery');
-	if ($subject.length && $.isFunction($.Fotorama)) {
-		$subject.fotorama({
+  // Enable the Bootstrap carousel (silverstripe-carousel)
+  $subject = $('#ss-carousel');
+  if ($subject.length && $.isFunction($.carousel)) {
+    $subject.carousel(silverstrap.carousel);
+  }
 
-			nav: 'thumbs',
-			click: ! $.isFunction($.colorbox),
-			allowfullscreen: 'native',
-			width: '100%'
-		});
-	}
+  // Enable the Fotorama gallery (silverstripe-gallery)
+  $subject = $('#ss-gallery');
+  if ($subject.length && $.isFunction($.Fotorama)) {
+    $subject.fotorama(silverstrap.fotorama);
+  }
 });
