@@ -36,7 +36,13 @@ Features
   module, silverstrap will generate on the fly the table of contents of
   the current page (if possible) and it will present it in a _.navlist_
   on the right side. Your site will gain table of contents for free.
-* Proper support for pages nested at arbitrary levels.
+* Out of the box support for the
+  [silverstripe-carousel](http://dev.entidi.com/p/silverstripe-carousel/)
+  module.
+* Out of the box support for the
+  [silverstripe-gallery](http://dev.entidi.com/p/silverstripe-gallery/)
+  module.
+* Proper support for menu with pages nested at arbitrary levels.
 * Quite extensible and customizable. This can be done by _overriding_
   the default implementation instead of editing it: check the section
   *Overriding silverstrap* for further details.
@@ -44,6 +50,8 @@ Features
   (such as JQuery and Bootstrap) are fetched from the jsdelivr CDN
   network but a couple of alternate methods are provided. See the
   section *External dependencies* for details.
+* JavaScript configuration can be overriden: see *Customizing JavaScript
+  modules*.
 
 External dependencies
 ---------------------
@@ -72,6 +80,25 @@ Depending on your requirements, you can prefer one of these methods
 instead of the default one. If this is the case, just override
 `Silverstrap.ss` to include the offline or the modular version. Consult
 the next session to know how to override templates.
+
+Customizing JavaScript modules
+------------------------------
+
+`silverstrap.js` defines the global object `silverstrap` where all the
+default JavaScript settings are stored.
+
+To override this settings (i.e. to change the out of the box behavior of
+the JavaScript modules) you should change this global object after
+including `silverstrap.js`, e.g.:
+
+        <script src="themes/silverstrap/js/silverstrap.js></script>
+        <script>
+          // Disable fullscreen in fotorama
+          silverstrap.fotorama.allowfullscreen = false;
+          // Colorbox zoom to 50% max
+          silverstrap.colorbox.maxWidth = '50%';
+          silverstrap.colorbox.maxHeight = '50%';
+        </script>
 
 Overriding silverstrap
 ----------------------
@@ -147,5 +174,12 @@ website directory with the following content:
 Support
 -------
 
-For bug reports or feature requests, please use the dedicated
-[development tracker](http://dev.entidi.com/p/silverstrap/).
+This project has been developed by [ntd](mailto:ntd@entidi.it). Its
+[home page](http://silverstripe.entidi.com/themes/) is shared by other
+[SilverStripe](http://www.silverstripe.org/) modules and themes.
+
+To check out the code, report issues or propose enhancements, go to the
+[dedicated tracker](http://dev.entidi.com/p/silverstripe-carousel).
+[dedicated tracker](http://dev.entidi.com/p/silverstrap/).
+Alternatively, you can do the same things by leveraging the official
+[github repository](https://github.com/ntd/silverstrap).
