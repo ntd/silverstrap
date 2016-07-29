@@ -1,4 +1,4 @@
-<div class="form-group $HolderClasses<% if $Message %> has-error<% end_if %>">
+<div class="$Silverstrap.group $HolderClasses<% if $Message %> has-error<% end_if %>">
   <div class="$Silverstrap.no_label $Silverstrap.holder">
     <div class="checkbox<% if $isReadonly || $isDisabled %> disabled<% end_if %>">
       <label>

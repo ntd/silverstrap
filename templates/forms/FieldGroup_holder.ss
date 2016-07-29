@@ -1,4 +1,4 @@
-<div class="form-group $HolderClasses<% if $Message %> has-error<% end_if %>"><% if $Title %>
+<div class="$Silverstrap.group $HolderClasses<% if $Message %> has-error<% end_if %>"><% if $Title %>
   <label class="$Silverstrap.label"<% if $ID %> for="$ID"<% end_if %>>$Title</label><% end_if %><% loop $FieldList %>
   <%-- The following div should pertain to SmallFieldHolder but I cannot pass parameters
        to the underlying templates for applying the offset only to the first field --%>
