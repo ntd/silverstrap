@@ -28,6 +28,14 @@ var silverstrap = {
 $(document).ready(function () {
   var $subject;
 
+  // Enable help tooltips for form elements
+  $subject = $('[data-toggle="tooltip"]');
+  $subject.tooltip({
+    placement: function () {
+      return $(window).width() >= 992 ? 'right' : 'bottom';
+    }
+  });
+
   // Enable colorbox support on Fotorama frames
   if ($.isFunction($.colorbox) && $.isFunction($.Fotorama)) {
     var transition;

@@ -18,11 +18,12 @@
         "source": "http://dev.entidi.com/p/silverstrap/source/tree/master/"
     },
     "require": {
-        "silverstripe/framework": "~3.1"
+        "entidi/silverstrap-module": "~1.0"
     },
     "extra": {
         "screenshots": [
-            "http://silverstripe.entidi.com/assets/silverstrap.png"
+            "http://silverstripe.entidi.com/assets/silverstrap.png",
+            "http://silverstripe.entidi.com/assets/silverstrap-forms.jpeg"
         ]
     },
     "suggest": {

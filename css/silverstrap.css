@@ -259,6 +259,9 @@ ul.nav-stacked ul > li:last-child:visible > a {
 	background-color: #0088cc;
 	cursor: pointer;
 }
+.tooltip-inner {
+	width: 20em;
+}
 
 /**
  * Hovering content component, i.e. new content that appears above default
