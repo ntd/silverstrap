@@ -18,7 +18,6 @@
         "source": "http://dev.entidi.com/p/silverstrap/source/tree/master/"
     },
     "require": {
-        "silverstripe/framework": "~3.1",
         "entidi/silverstrap-module": "~1.0"
     },
     "extra": {
