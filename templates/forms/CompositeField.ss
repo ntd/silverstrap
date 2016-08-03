@@ -1,4 +1,4 @@
-<$Tag class="$extraClass"><% if $Tag == 'fieldset' && $Legend %>
+<$Tag $AttributesHTML><% if $Tag == 'fieldset' && $Legend %>
   <legend>$Legend</legend><% end_if %><% loop $FieldList %><% if $ColumnCount %>
   <div class="column-{$ColumnCount} $FirstLast">
     $Field
