@@ -36,6 +36,15 @@ $(document).ready(function () {
     }
   });
 
+  // Set hidden input of SilverstrapSelectionGroup
+  $subject = $('ul.silverstrapselectiongroup.nav a');
+  $subject.on('click', function () {
+    var href  = $(this).attr('href'),
+        pivot = href.lastIndexOf('-'),
+        name  = href.substr(1, pivot - 1);
+    $('input[type="hidden"][name="' + name + '"]').val($(this).data('value'));
+  });
+
   // Enable colorbox support on Fotorama frames
   if ($.isFunction($.colorbox) && $.isFunction($.Fotorama)) {
     var transition;
