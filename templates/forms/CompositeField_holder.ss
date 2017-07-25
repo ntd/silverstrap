@@ -1,4 +1,4 @@
-<$Tag $getAttributesHTML('class') class="$extraClass<% if $ColumnCount %> multicolumn<% end_if %>"><% if $Tag == 'fieldset' && $Legend %>
+<$Tag <% if $Tag == 'fieldset' %>$getAttributesHTML('class')<% else %>$getAttributesHTML('name', 'class')<% end_if %> class="$extraClass<% if $ColumnCount %> multicolumn<% end_if %>"><% if $Tag == 'fieldset' && $Legend %>
   <legend>$Legend</legend><% end_if %><% loop $FieldList %><% if $ColumnCount %>
   <div class="column-{$ColumnCount} $FirstLast">
     $FieldHolder
