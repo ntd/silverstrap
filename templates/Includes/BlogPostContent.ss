@@ -1,2 +1,0 @@
-<% include ContentHeader %>
-<% include BlogPostContentBody %>
