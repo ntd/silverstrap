@@ -24,7 +24,7 @@
         "source": "http://dev.entidi.com/p/silverstrap/source/tree/master/"
     },
     "require": {
-        "entidi/silverstrap-module": "dev-dev"
+        "entidi/silverstrap-module": "^2.0"
     },
     "extra": {
         "screenshots": [
