@@ -1,1 +1,1 @@
-<% require javascript("//cdn.jsdelivr.net/jquery/1/jquery.min.js") %>
+<% require javascript("//cdn.jsdelivr.net/jquery/3/jquery.min.js") %>

@@ -30,6 +30,11 @@
         "screenshots": [
             "http://silverstripe.entidi.com/assets/silverstrap.png",
             "http://silverstripe.entidi.com/assets/silverstrap-forms.jpeg"
+        ],
+        "expose": [
+            "css",
+            "js",
+            "fonts"
         ]
     },
     "suggest": {
