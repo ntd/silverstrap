@@ -2,7 +2,7 @@ SilverStrap
 ===========
 
 A [SilverStripe](http://www.silverstripe.org/) theme based on the
-[Bootstrap](http://twitter.github.io/bootstrap/) front-end framework. It should
+[Bootstrap](http://getbootstrap.com/) front-end framework. It should
 work out of the box on basic sites, i.e. by installing and enabling it you
 should already see how it looks a SilverStrap based website.
 
