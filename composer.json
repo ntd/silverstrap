@@ -20,8 +20,8 @@
         }
     ],
     "support": {
-        "issues": "http://dev.entidi.com/p/silverstrap/issues/",
-        "source": "http://dev.entidi.com/p/silverstrap/source/tree/master/"
+        "issues": "https://track.entidi.com/project/view/9/",
+        "source": "https://track.entidi.com/source/silverstrap/"
     },
     "require": {
         "entidi/silverstrap-module": "^2.0"
