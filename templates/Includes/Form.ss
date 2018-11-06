@@ -1,5 +1,5 @@
 <% if $IncludeFormTag %>
-<form class="form-horizontal $extraClass" $getAttributesHTML('class') role="form"><% end_if %><% if $Message %>
+<form class="form-horizontal $extraClass" $getAttributesHTML('class')><% end_if %><% if $Message %>
   <div id="{$FormName}_error" class="alert alert-<% if $MessageType='good' %>success<% else_if $MessageType='bad' %>danger<% else %>warning<% end_if %>">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     $Message
