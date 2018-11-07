@@ -5,7 +5,7 @@
   </li><% end_loop %>
 </ul>
 <div class="tab-content"><% loop $FieldSet %>
-  <div id="$Up.Name.ATT-$Pos" role="tab-panel" class="tab-pane fade<% if $Selected %> in active<% end_if %>"><% if $FieldList %>
+  <div id="$Up.Name.ATT-$Pos" role="tabpanel" class="tab-pane fade<% if $Selected %> in active<% end_if %>"><% if $FieldList %>
     $FieldHolder<% end_if %>
   </div><% end_loop %>
 </div>
