@@ -1,0 +1,8 @@
+zh_CN:
+  Silverstrap:
+    GOTO: '跳转至 {page} 页'
+    TOC: '表格内容'
+    Search: '搜索'
+    SearchTitle: '输入关键词进行搜索'
+    RESULTS: '显示结果 &quot;{query}&quot; ({count} 页):'
+    NORESULTS: '未能发现以下内容 &quot;{query}&quot; '
