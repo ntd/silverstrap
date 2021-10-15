@@ -1,1 +1,1 @@
-FormField.ss
+<input class="$Silverstrap.control $extraClass" $getAttributesHTML('class')<% if $isReadonly %> readonly<% else_if $isDisabled %> disabled<% end_if %><% if $Description && not $isDisabled %> data-toggle="tooltip" title="$Description.ATT"<% end_if %>>
