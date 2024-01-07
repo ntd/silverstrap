@@ -12,7 +12,7 @@ Silverstripe 3 and Bootstrap 3. The `ss4-bs3` branch is in maintenance
 mode and it is based on Silverstripe 4 and Bootstrap 3.
 
 The `master` and `dev` branches are currently developed and target
-Silverstripe 5 and Bootstrap 5.
+Silverstripe 5 and Bootstrap 3.
 
 
 Installation
