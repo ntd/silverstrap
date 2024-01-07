@@ -15,7 +15,7 @@
   <li>
     <%t SilverStripe\\Blog\\Model\\Blog.Posted "Posted" %>
     <a href="$MonthlyArchiveLink.ATT">$PublishDate.ago</a><% if $Credits %>
-    <%t SilverStripe\\Blog\\Model\\Blog.By "by" %><% loop $Credits %><% if not $First %><% if $Last %>
+    <%t SilverStripe\\Blog\\Model\\Blog.By "by" %><% loop $Credits %><% if not $IsFirst %><% if $IsLast %>
     <%t SilverStripe\\Blog\\Model\\Blog.AND "and" %><% else %>, <% end_if %><% end_if %><% if $URLSegment && not $Up.ProfilesDisabled %>
     <a href="$URL">$Name.XML</a><% else %>
     $Name.XML<% end_if %><% end_loop %><% end_if %>
