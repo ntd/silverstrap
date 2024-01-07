@@ -2,7 +2,6 @@
     "name": "entidi/silverstrap",
     "description": "A SilverStripe theme based on Bootstrap front end framework",
     "type": "silverstripe-theme",
-    "homepage": "http://silverstripe.entidi.com/themes/",
     "license": "BSD-2-Clause",
     "keywords": [
         "silverstripe",
@@ -15,22 +14,18 @@
         {
             "name": "Nicola Fontana",
             "email": "ntd@entidi.it",
-            "homepage": "http://www.entidi.com/",
+            "homepage": "https://www.entidi.com/",
             "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://track.entidi.com/project/view/9/",
-        "source": "https://track.entidi.com/source/silverstrap/"
+        "issues": "https://github.com/ntd/silverstrap/issues",
+        "source": "https://github.com/ntd/silverstrap"
     },
     "require": {
-        "entidi/silverstrap-module": "^2.0"
+        "entidi/silverstrap-module": "^3"
     },
     "extra": {
-        "screenshots": [
-            "http://silverstripe.entidi.com/assets/silverstrap.png",
-            "http://silverstripe.entidi.com/assets/silverstrap-forms.jpeg"
-        ],
         "expose": [
             "css",
             "js",
@@ -38,9 +33,8 @@
         ]
     },
     "suggest": {
-        "entidi/silverstrap-cerulean": "Silverstrap customization that uses the Cerulean theme from bootswatch.com",
-        "entidi/silverstripe-autotoc": "A module compatible with silverstrap that automatically generates table of contents",
-        "entidi/silverstripe-carousel": "A carousel page type supported out of the box by silverstrap",
-        "entidi/silverstripe-gallery": "A gallery page type supported out of the box by silverstrap"
+        "entidi/silverstripe-autotoc": "A module compatible with SilverStrap that automatically generates table of contents",
+        "entidi/silverstripe-carousel": "A carousel page type supported out of the box by SilverStrap",
+        "entidi/silverstripe-gallery": "A gallery page type supported out of the box by SilverStrap"
     }
 }
