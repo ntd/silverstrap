@@ -1,6 +1,6 @@
 {
     "name": "entidi/silverstrap",
-    "description": "A SilverStripe theme based on Bootstrap front end framework",
+    "description": "A Silverstripe theme based on Bootstrap front end framework",
     "type": "silverstripe-theme",
     "license": "BSD-2-Clause",
     "keywords": [
