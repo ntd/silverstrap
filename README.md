@@ -6,10 +6,12 @@ A [SilverStripe](http://www.silverstripe.org/) theme based on the
 work out of the box on basic sites, i.e. by installing and enabling it you
 should already see how it looks a SilverStrap based website.
 
-The `boostrap2` branch is in maintenance mode and it is based on the
+The `ss3-bs2` branch is in maintenance mode and it is based on
 SilverStripe 3 and Bootstrap 2.
-The master and dev branches, released as silverstrap-2.x.x, are based
-on Bootstrap 3.
+The `ss3-bs3` branch is in maintenance mode and it is based on
+SilverStripe 3 and Bootstrap 3.
+The `ss4-bs3` branch is in maintenance mode and it is based on
+SilverStripe 4 and Bootstrap 3.
 
 Installation
 ------------
