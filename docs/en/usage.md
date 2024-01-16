@@ -1,9 +1,9 @@
 Usage
 -----
 
-Complete layout customization is provided by the related [SilverStripe
-module](https://github.com/ntd/silverstrap-module): see its documentation for
-further details.
+Complete layout customization is provided by the related [Silverstripe
+module](https://github.com/ntd/silverstrap-module): see its
+documentation for further details.
 
 External dependencies
 ---------------------
@@ -64,7 +64,7 @@ this works, it will change the silverstrap directory tree... and this
 is very bad: you'll loose the possibility to update silverstrap with a
 `git pull` or by leveraging `composer`.
 
-Instead you can use the SilverStripe template trick used by the
+Instead you can use the Silverstripe template trick used by the
 [silverstripe-treeish](http://dev.entidi.com/p/silverstripe-treeish/)
 project, i.e. override any template *without* touching a single byte of
 the original folder:
@@ -99,7 +99,7 @@ Accessing parent pages
 
 The default implementation provides support for custom nested levels
 in _.navbar_ but does not provide a way to access the parent pages, as
-commonly provided by vanilla SilverStripe. In other words, if you have
+commonly provided by vanilla Silverstripe. In other words, if you have
 subpages under `yoursite/contacts/` you can access them but there is no
 easy way to access `yoursite/contacts/` (apart from directly write the
 URL).

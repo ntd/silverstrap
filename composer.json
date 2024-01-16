@@ -33,8 +33,8 @@
         ]
     },
     "suggest": {
-        "entidi/silverstripe-autotoc": "A module compatible with SilverStrap that automatically generates table of contents",
-        "entidi/silverstripe-carousel": "A carousel page type supported out of the box by SilverStrap",
-        "entidi/silverstripe-gallery": "A gallery page type supported out of the box by SilverStrap"
+        "entidi/silverstripe-autotoc": "A module compatible with Silverstrap that automatically generates table of contents",
+        "entidi/silverstripe-carousel": "A carousel page type supported out of the box by Silverstrap",
+        "entidi/silverstripe-gallery": "A gallery page type supported out of the box by Silverstrap"
     }
 }
