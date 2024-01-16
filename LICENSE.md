@@ -1,4 +1,4 @@
-_Copyright © 2013-2021, Nicola Fontana <ntd@entidi.it>_
+_Copyright © 2013-2024, Nicola Fontana <ntd@entidi.it>_
 _All rights reserved._
 
 Redistribution and use in source and binary forms, with or without modification,
