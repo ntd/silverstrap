@@ -3,11 +3,11 @@ Silverstrap
 
 A [Silverstripe](https://www.silverstripe.org/) theme based on the
 [Bootstrap](http://getbootstrap.com/) front-end framework. It should
-work out of the box on basic sites, i.e. by installing and enabling it you
-should already see how it looks a Silverstrap based website.
+work out of the box on basic websites, so installing and enabling it
+should already show you how a Silverstrap based website looks alike.
 
-The `ss3-bs2` branch is unmaintained and it is based on Silverstripe 3
-and Bootstrap 2. The `ss3-bs3` branch is unmaintained and it is based on
+The `ss3-bs2` branch is unmaintained: it was based on Silverstripe 3
+and Bootstrap 2. The `ss3-bs3` branch is unmaintained: it was based on
 Silverstripe 3 and Bootstrap 3. The `ss4-bs3` branch is in maintenance
 mode and it is based on Silverstripe 4 and Bootstrap 3.
 

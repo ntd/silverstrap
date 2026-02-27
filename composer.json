@@ -1,8 +1,9 @@
 {
     "name": "entidi/silverstrap",
-    "description": "A Silverstripe theme based on Bootstrap front end framework",
     "type": "silverstripe-theme",
-    "license": "BSD-2-Clause",
+    "description": "A Silverstripe theme based on Bootstrap front end framework",
+    "homepage": "https://github.com/ntd/silverstrap",
+    "license": "BSD-3-Clause",
     "keywords": [
         "silverstripe",
         "bootstrap",
@@ -14,8 +15,8 @@
         {
             "name": "Nicola Fontana",
             "email": "ntd@entidi.it",
-            "homepage": "https://www.entidi.com/",
-            "role": "Developer"
+            "homepage": "https://nicola.entidi.com/",
+            "role": "Web developer and designer"
         }
     ],
     "support": {
@@ -23,7 +24,7 @@
         "source": "https://github.com/ntd/silverstrap"
     },
     "require": {
-        "entidi/silverstrap-module": "^3"
+        "entidi/silverstrap-module": ">=3.0.0"
     },
     "extra": {
         "expose": [
